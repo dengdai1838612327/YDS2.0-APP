@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=0">
+</head>
+<body>
+<div class="content" style="padding: 0 0 55px;">
+  <div class="head-img">
+    <div class="my-info clearfix">
+      <div class="my-img-wrap">
+        <span class="my-img" onclick="return head_edit();"><img src="images/c-head.png"></span>
+      </div>
+      <div class="my-person-info clearfix">
+        <div class="my-head-number">
+          <!-- <p>150****0000</p> -->
+          <p>您还未登录，请登录</p>
+          <a href="###">登录</a>
+        </div>
+      </div>
+      <!-- <div class="head-message"> <i class=" sprites"></i> </div> -->
+      <div class="head-message new"> <i class=" sprites"></i> </div>
+      <div class="head-set"> <i class=" sprites"></i> </div>
+    </div>
+  </div>
+  <div class="order-item">
+    <p class="tit">订单管理</p>
+    <ul>
+      <li>
+        <img src="images/c-1.png" width="43" height="43">
+        <span>话费流量</span>
+      </li>
+      <li>
+        <img src="images/c-2.png" width="43" height="43">
+        <span>加油卡</span>
+      </li>
+      <li>
+        <img src="images/c-3.png" width="43" height="43">
+        <span>购物</span>
+      </li>
+      <li>
+        <img src="images/c-4.png" width="43" height="43">
+        <span>本地生活</span>
+      </li>
+      <li>
+        <img src="images/c-5.png" width="43" height="43">
+        <span>影票</span>
+      </li>
+      <li>
+        <img src="images/c-6.png" width="43" height="43">
+        <span>违章缴费</span>
+      </li>
+      <li>
+        <img src="images/c-7.png" width="43" height="43">
+        <span>礼品卡</span>
+      </li>
+      <li>
+        <img src="images/c-8.png" width="43" height="43">
+        <span>代金券</span>
+      </li>
+    </ul>
+  </div>
+  <div class="vip-link">
+    <i class="sprites card"></i>
+    <span>银行卡管理</span>
+    <i class="icon-right"></i>
+  </div>
+  <div class="vip-link">
+    <i class="sprites pwd"></i>
+    <span>密码管理</span>
+    <i class="icon-right"></i>
+  </div>
+  <div class="vip-adv">
+    <img src="images/b11.jpg">
+  </div>
+</div>
+<nav class="bar bar-tab footer">
+  <a class="tab-item tab1" href="#">
+    <i class="sprites"></i>
+    <span class="tab-label">首页</span>
+  </a>
+  <a class="tab-item tab2" href="#">
+    <i class="sprites"></i>
+    <span class="tab-label">发现</span>
+  </a>
+  <a class="tab-item tab3" href="#">
+    <i class="sprites"></i>
+    <span class="tab-label">购物车</span>
+  </a>
+  <a class="tab-item tab4 cur" href="#">
+    <i class="sprites"></i>
+    <span class="tab-label">我的</span>
+  </a>
+</nav>
+<div id="bg-gray"></div>
+<div class="head-edit-modal">
+  <a href="###">拍照</a>
+  <a href="###">从手机相册选择</a>
+  <a href="###">取消</a>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+function head_edit(){
+  var bggray = $("#bg-gray");
+  var modal = $(".head-edit-modal");
+  bggray.css("width",window.screen.width);
+  bggray.css("height",window.screen.height);
+  bggray.show();
+  modal.show();
+}
+</script>
+</body>
+</html>

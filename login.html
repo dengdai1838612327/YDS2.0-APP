@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=0">
+</head>
+<!-- 短信登录、密码登录、忘记密码、修改密码均可复用此页面 -->
+<body class="bfff">
+<div class="topfixed">
+  <header class="header red">
+    <a href="###" class="a-back"></a>
+    <h2>短信登录</h2>
+    <a href="###" class="a-rt">注册</a>
+  </header>
+</div>
+<div class="content" style="padding:45px 0 0;">
+  <div class="bind_phone">
+    <ul>
+      <li>
+        <input type="text" class="phone_input" value="请输入您的手机号码">
+      </li>
+      <li>
+        <input type="text" class="phone_input2" value="请输入图文验证码后，点击获取">
+        <span class="tw_img">
+          <img src="images/tw_yzm.png">
+        </span>
+        <a class="a_hq" href="###">获&nbsp;取</a>
+      </li>
+      <li>
+        <input type="text" class="phone_input" value="请输入手机验证码">
+      </li>
+    </ul>
+    <a href="###" class="forget">忘记密码</a>
+    <div class="a_phone_btn" onclick="return succ();">
+      <a href="###">登&nbsp;录</a>
+    </div>
+  </div>
+  <div class="login-switch">
+    <a href="###">账号登录</a>|
+    <a href="###">短信登录</a>
+  </div>
+</div>
+<div class="error-fixed">
+  <p>所有错误信息，均在改层显示。停留3秒，自动消失。</p>
+</div>
+<div id="bg-gray"></div>
+<div class="succ-modal">设置成功</div>
+<script src="js/jquery.min.js"></script>
+<script>
+function succ(){
+  var bggray = $("#bg-gray");
+  var modal = $(".succ-modal");
+  bggray.css("width",window.screen.width);
+  bggray.css("height",window.screen.height);
+  bggray.show();
+  modal.show();
+}
+</script>
+</body>
+</html>

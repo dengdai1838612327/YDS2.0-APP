@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>设置</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=0">
+</head>
+<body>
+<div class="topfixed">
+  <header class="header red">
+    <a href="###" class="a-back"></a>
+    <h2>设置</h2>
+  </header>
+</div>
+<div class="content" style="padding:45px 0 0;">
+  <div class="pwd-manage">
+    <ul>
+      <li>
+        <span>帮助中心</span>
+        <i class="icon-right"></i>
+      </li>
+      <li>
+        <span>版本说明</span>
+        <span class="gray">V20.0.0</span>
+        <i class="icon-right"></i>
+      </li>
+      <li>
+        <span>清理缓存(25.6M)</span>
+        <i class="icon-right"></i>
+      </li>
+      <li onclick="return share_modal();">
+        <span>分享APP</span>
+        <i class="icon-right"></i>
+      </li>
+    </ul>
+  </div>
+</div>
+<div id="bg-gray"></div>
+<div class="share-modal">
+  <ul>
+    <li>
+      <img src="images/share-wechat.png" width="60" height="60">
+      <span>微信</span>
+    </li>
+    <li>
+      <img src="images/share-friends.png" width="60" height="60">
+      <span>朋友圈</span>
+    </li>
+    <li>
+      <img src="images/share-weibo.png" width="60" height="60">
+      <span>微博</span>
+    </li>
+    <li>
+      <img src="images/share-msg.png" width="60" height="60">
+      <span>短信</span>
+    </li>
+  </ul>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+function share_modal(){
+  var bggray = $("#bg-gray");
+  var modal = $(".share-modal");
+  bggray.css("width",window.screen.width);
+  bggray.css("height",window.screen.height);
+  bggray.show();
+  modal.show();
+}
+</script>
+</body>
+</html>

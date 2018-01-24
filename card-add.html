@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>添加银行卡</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=0">
+</head>
+<body>
+<div class="topfixed">
+  <header class="header red">
+    <a href="###" class="a-back"></a>
+    <h2>添加银行卡</h2>
+  </header>
+</div>
+<div class="content" style="padding:45px 0 0;">
+  <div class="add-card">
+    <ul>
+      <li>
+        <label>银行卡号</label>
+        <span>1232345674567867895678912345667890</span>
+      </li>
+      <li>
+        <label>真实姓名</label>
+        <input type="text" placeholder="持卡人姓名">
+      </li>
+      <li class="sel">
+        <label>证件类型</label>
+        <span>请选择证件类型</span>
+        <i class="icon-up"></i>
+        <!-- <i class="icon-down"></i> -->
+        <div class="sel-list">
+          <p>身份证</p>
+          <p>中国公民护照</p>
+          <p>军官证</p>
+          <p>士兵证</p>
+          <p>警官证</p>
+          <p>台胞证</p>
+        </div>
+      </li>
+      <li>
+        <label>证件号码</label>
+        <input type="text" placeholder="请输入证件号码">
+      </li>
+      <li>
+        <label>手机号码</label>
+        <input type="text" placeholder="请输入银行预留手机号码">
+      </li>
+      <li class="code">
+        <label>验证码</label>
+        <input type="text" placeholder="请输入短信验证码">
+        <button>获取验证码</button>
+      </li>
+    </ul>
+    <input type="button" class="card-btn" value="确定" onclick="return succ();">
+  </div>
+</div>
+<div id="bg-gray"></div>
+<div class="succ-modal">绑卡成功！</div>
+<script src="js/jquery.min.js"></script>
+<script>
+function succ(){
+  var bggray = $("#bg-gray");
+  var modal = $(".succ-modal");
+  bggray.css("width",window.screen.width);
+  bggray.css("height",window.screen.height);
+  bggray.show();
+  modal.show();
+}
+</script>
+</body>
+</html>
